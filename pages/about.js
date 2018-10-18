@@ -1,8 +1,7 @@
-const About = () => (
-  <div>
-    <p>This is the about page</p>
-    <p>some about content</p>
-  </div>
-)
+import Layout from '../components/Layout.js'
 
-export default About
+export default () => (
+    <Layout>
+       <p>This is the about page</p>
+    </Layout>
+)

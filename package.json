@@ -4,17 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
     "start": "next start"
   },
   "author": "doug mcdonald",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.4",
+    "isomorphic-fetch": "^2.2.1",
     "next": "^7.0.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "styled-components": "^4.0.2"
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1"
   },
   "devDependencies": {
     "eslint": "^5.7.0"

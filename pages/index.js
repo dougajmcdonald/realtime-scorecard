@@ -11,13 +11,12 @@ class Index extends React.Component {
 
     const storageValue = localStorage.getItem('value')
 
-    if(!storageValue) {
-      return
+    if(storageValue) {
+      this.setState({
+        value: storageValue
+      })
     }
 
-    this.setState({
-      value: storageValue
-    })
   }
 
   handleChange(e) {
@@ -40,3 +39,14 @@ class Index extends React.Component {
 }
 
 export default Index
+
+// Index.getInitialProps = async function() {
+//   const res = await fetch('https://api.tvmaze.com/search/shows?q=batman')
+//   const data = await res.json()
+
+//   console.log(`Show data fetched. Count: ${data.length}`)
+
+//   return {
+//     shows: data
+//   }
+// }
